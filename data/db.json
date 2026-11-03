@@ -1,0 +1,360 @@
+{
+  "users": [
+    {
+      "id": "usr_auth_1",
+      "role": "authority",
+      "name": "Officer Sarah Jenkins",
+      "email": "officer@police.gov",
+      "phone": "+1-555-0101",
+      "passwordHash": "776f48d72508e3a0afc457495de50eff7d79b2f6645cb85e45c2d24e0e9d1e911b6280945b5708bccdf0fe1e1cb6828289c5b7e00994d011683f39ad8ace4110",
+      "salt": "da719c9826747510090062521b6ffb4f",
+      "badgeId": "AP-4892",
+      "department": "Metropolitan Criminal Investigation Dept",
+      "createdAt": "2026-09-26T06:16:00.064Z"
+    },
+    {
+      "id": "usr_auth_2",
+      "role": "authority",
+      "name": "Detective Marcus Vance",
+      "email": "marcus@police.gov",
+      "phone": "+1-555-0102",
+      "passwordHash": "33eb8edade5d42b54e7358722c0e3505d2dfa7817071d0c2282975cbb7042878affc5108d6e5d49b299b5aee1f497a696e9806212672c5c46863ba2ff3a1c022",
+      "salt": "b73bc1eb6aed32deeeb6d52b72d347ca",
+      "badgeId": "AP-5104",
+      "department": "Cybercrime & Digital Forensics Unit",
+      "createdAt": "2026-10-01T06:16:00.068Z"
+    },
+    {
+      "id": "usr_auth_3",
+      "role": "authority",
+      "name": "Inspector Emily Chen",
+      "email": "emily@police.gov",
+      "phone": "+1-555-0103",
+      "passwordHash": "6d5a110579eb382dd6fc6c24829847dca1c971fc45e65772ef4a493eb6f1805ddeb8ea6f73a88526cb34f867365e6a9634b0fd4830996c80cdf367db04ac09ad",
+      "salt": "24a0f95a44e1a3d8acd0682598736dd6",
+      "badgeId": "AP-3391",
+      "department": "Special Victims & Harassment Cell",
+      "createdAt": "2026-10-06T06:16:00.069Z"
+    },
+    {
+      "id": "usr_vic_1",
+      "role": "victim",
+      "name": "Jane Doe",
+      "email": "victim@example.com",
+      "phone": "+1-555-0199",
+      "passwordHash": "1d2996504987aa8ab760f8d6dca6bd57952164afe255d6fcdde149717d8ab924b65b9a48a9d5ea968070bbe0728a54225de4a1e39f556ce2764c265a52e1fa69",
+      "salt": "cb3f387c781d2a50c46223d60bc62f4f",
+      "createdAt": "2026-10-16T06:16:00.070Z"
+    },
+    {
+      "id": "usr_1792996680585_h1rn",
+      "role": "victim",
+      "name": "anu",
+      "email": "anu@gmail.com",
+      "phone": "8767890567",
+      "passwordHash": "02cd205593f352929bdf516027af14f478d0ffcd7c5853d06e6937841e5b594e26959e264d34069621301993fa7f27ceae0b7ffe244d49d39c6da56c802f5fc3",
+      "salt": "277a501d6ca3641b903085ce97f3a4b5",
+      "createdAt": "2026-10-26T06:38:00.585Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "CR-2026-4125",
+      "victimId": "usr_1792996680585_h1rn",
+      "victimName": "anu",
+      "victimPhone": "8767890567",
+      "victimEmail": "anu@gmail.com",
+      "title": "theft",
+      "description": "person stole a mobile phone and a wallet from a parked motorcycle near a bus stop.",
+      "category": "Theft",
+      "severity": "Moderate",
+      "status": "In Progress",
+      "incidentDate": "2026-10-26",
+      "incidentTime": "12:09",
+      "locationName": "Pinned Location",
+      "address": "Samayapuram, Manachanallur, Tiruchirappalli, Tamil Nadu, 621112, India",
+      "latitude": 10.928887313342507,
+      "longitude": 78.73739176357518,
+      "auditLogs": [
+        {
+          "id": "aud_1792996971223",
+          "timestamp": "2026-10-26T06:42:51.223Z",
+          "officerName": "Intake System",
+          "action": "Complaint Filed by Victim",
+          "note": "Severity: Moderate, Category: Theft"
+        },
+        {
+          "id": "aud_1793180172741_status",
+          "timestamp": "2026-10-28T09:36:12.741Z",
+          "officerName": "Officer Sarah Jenkins",
+          "action": "Case Status Changed",
+          "field": "status",
+          "previousValue": "Pending",
+          "newValue": "In Progress",
+          "note": "Status updated from Pending to In Progress"
+        },
+        {
+          "id": "aud_1793180172741_officer",
+          "timestamp": "2026-10-28T09:36:12.741Z",
+          "officerName": "Officer Sarah Jenkins",
+          "action": "Officer Assigned",
+          "field": "assignedOfficer",
+          "previousValue": "Unassigned",
+          "newValue": "Officer Sarah Jenkins"
+        }
+      ],
+      "createdAt": "2026-10-26T06:42:51.223Z",
+      "updatedAt": "2026-10-28T09:36:12.741Z",
+      "assignedOfficer": "Officer Sarah Jenkins",
+      "officerNotes": ""
+    },
+    {
+      "id": "CR-2026-0812",
+      "victimId": "usr_vic_1",
+      "victimName": "Jane Doe",
+      "victimPhone": "+1-555-0199",
+      "victimEmail": "victim@example.com",
+      "title": "Armed Robbery and Physical Assault at Downtown Transit Hub",
+      "description": "While walking toward the 5th Avenue Metro Entrance around 9:45 PM, two masked individuals brandished weapons, forcefully seized personal belongings, and physically assaulted me before fleeing south.",
+      "category": "Physical Assault",
+      "severity": "Severe",
+      "status": "In Progress",
+      "incidentDate": "2026-10-22",
+      "incidentTime": "21:45",
+      "locationName": "5th Avenue Transit Entrance",
+      "address": "742 5th Avenue, Metro District, NY 10019",
+      "latitude": 40.7638,
+      "longitude": -73.9729,
+      "aiSuggestedCategory": "Physical Assault",
+      "aiSuggestedSeverity": "Severe",
+      "aiExplanation": "Incident mentions physical violence, dangerous weapons, and robbery causing direct bodily harm.",
+      "aiAnalyzedAt": "2026-10-23T06:16:00.070Z",
+      "assignedOfficer": "Officer Sarah Jenkins",
+      "officerNotes": "Surveillance footage subpoenaed from nearby subway station. Patrol dispatched to sweep perimeter.",
+      "auditLogs": [
+        {
+          "id": "aud_1",
+          "timestamp": "2026-10-23T06:16:00.070Z",
+          "officerName": "System",
+          "action": "Complaint Registered"
+        },
+        {
+          "id": "aud_2",
+          "timestamp": "2026-10-24T06:16:00.070Z",
+          "officerName": "Officer Sarah Jenkins",
+          "action": "Assigned Officer & Status Changed",
+          "field": "status",
+          "previousValue": "Pending",
+          "newValue": "In Progress",
+          "note": "Investigating transit camera feeds."
+        }
+      ],
+      "createdAt": "2026-10-23T06:16:00.070Z",
+      "updatedAt": "2026-10-24T06:16:00.070Z"
+    },
+    {
+      "id": "CR-2026-0813",
+      "victimId": "usr_vic_1",
+      "victimName": "Jane Doe",
+      "victimPhone": "+1-555-0199",
+      "victimEmail": "victim@example.com",
+      "title": "Unauthorized Bank Wire & Crypto Phishing Cyber Attack",
+      "description": "Received spoofed banking emails followed by automated credential compromise. Unauthorized transfers totaling $6,200 were executed to foreign crypto addresses without SMS OTP confirmation.",
+      "category": "Cybercrime",
+      "severity": "Moderate",
+      "status": "Pending",
+      "incidentDate": "2026-10-23",
+      "incidentTime": "14:20",
+      "locationName": "Online / Cyber Network",
+      "address": "Reported from 120 Pine Street, Financial District",
+      "latitude": 40.7061,
+      "longitude": -74.0086,
+      "aiSuggestedCategory": "Cybercrime",
+      "aiSuggestedSeverity": "Moderate",
+      "aiExplanation": "Digital financial fraud and credentials theft without immediate physical threat to life.",
+      "aiAnalyzedAt": "2026-10-24T06:16:00.070Z",
+      "auditLogs": [
+        {
+          "id": "aud_3",
+          "timestamp": "2026-10-24T06:16:00.070Z",
+          "officerName": "System",
+          "action": "Complaint Registered"
+        }
+      ],
+      "createdAt": "2026-10-24T06:16:00.070Z",
+      "updatedAt": "2026-10-24T06:16:00.070Z"
+    },
+    {
+      "id": "CR-2026-0814",
+      "victimId": "usr_vic_2_seed",
+      "victimName": "Robert Langdon",
+      "victimPhone": "+1-555-0188",
+      "victimEmail": "robert@university.edu",
+      "title": "Bicycle and Laptop Theft from Library Bike Stand",
+      "description": "Locked Trek commuter bicycle and rear pannier bag containing Lenovo laptop were cut and stolen between 2:00 PM and 4:30 PM.",
+      "category": "Theft",
+      "severity": "Normal / Low",
+      "status": "Closed",
+      "incidentDate": "2026-10-18",
+      "incidentTime": "15:30",
+      "locationName": "University Central Library",
+      "address": "535 W 114th St, Morningside Heights, NY 10027",
+      "latitude": 40.8064,
+      "longitude": -73.9632,
+      "aiSuggestedCategory": "Theft",
+      "aiSuggestedSeverity": "Normal / Low",
+      "aiExplanation": "Property theft with no bodily harm or weapon reported.",
+      "aiAnalyzedAt": "2026-10-19T06:16:00.070Z",
+      "assignedOfficer": "Detective Marcus Vance",
+      "officerNotes": "Bicycle recovered at local pawn exchange and returned to victim. Suspect cited.",
+      "auditLogs": [
+        {
+          "id": "aud_4",
+          "timestamp": "2026-10-19T06:16:00.070Z",
+          "officerName": "System",
+          "action": "Complaint Registered"
+        },
+        {
+          "id": "aud_5",
+          "timestamp": "2026-10-21T06:16:00.070Z",
+          "officerName": "Detective Marcus Vance",
+          "action": "Status Changed to Closed",
+          "field": "status",
+          "previousValue": "In Progress",
+          "newValue": "Closed",
+          "note": "Property recovered and returned."
+        }
+      ],
+      "createdAt": "2026-10-19T06:16:00.070Z",
+      "updatedAt": "2026-10-21T06:16:00.070Z"
+    },
+    {
+      "id": "CR-2026-0815",
+      "victimId": "usr_vic_3_seed",
+      "victimName": "Elena Rostova",
+      "victimPhone": "+1-555-0177",
+      "victimEmail": "elena@arts.org",
+      "title": "Persistent In-Person Stalking and Threatening Communications",
+      "description": "Individual has been following me from workplace to residence for five consecutive evenings, photographing windows and leaving threatening notes at my door.",
+      "category": "Harassment",
+      "severity": "Severe",
+      "status": "Pending",
+      "incidentDate": "2026-10-24",
+      "incidentTime": "20:10",
+      "locationName": "Residential Entrance",
+      "address": "320 West 85th Street, Upper West Side, NY 10024",
+      "latitude": 40.7877,
+      "longitude": -73.9791,
+      "aiSuggestedCategory": "Harassment",
+      "aiSuggestedSeverity": "Severe",
+      "aiExplanation": "Escalating stalking behavior with direct domestic boundary breach and explicit threats of harm.",
+      "aiAnalyzedAt": "2026-10-25T06:16:00.070Z",
+      "auditLogs": [
+        {
+          "id": "aud_6",
+          "timestamp": "2026-10-25T06:16:00.070Z",
+          "officerName": "System",
+          "action": "Complaint Registered - Flagged for Urgent Authority Review"
+        }
+      ],
+      "createdAt": "2026-10-25T06:16:00.070Z",
+      "updatedAt": "2026-10-25T06:16:00.070Z"
+    },
+    {
+      "id": "CR-2026-0816",
+      "victimId": "usr_vic_4_seed",
+      "victimName": "David Miller",
+      "victimPhone": "+1-555-0166",
+      "victimEmail": "david.m@construct.com",
+      "title": "Vandalism and Commercial Storefront Graffiti Damage",
+      "description": "Graffiti tagging and broken front display window at retail storefront overnight. No entry gained.",
+      "category": "Property Crime",
+      "severity": "Normal / Low",
+      "status": "In Progress",
+      "incidentDate": "2026-10-24",
+      "incidentTime": "03:15",
+      "locationName": "Retail Commercial Strip",
+      "address": "154 Columbus Ave, Upper West Side, NY 10023",
+      "latitude": 40.7742,
+      "longitude": -73.9806,
+      "aiSuggestedCategory": "Property Crime",
+      "aiSuggestedSeverity": "Normal / Low",
+      "aiExplanation": "Vandalism with property damage, no occupant injury.",
+      "aiAnalyzedAt": "2026-10-25T06:16:00.070Z",
+      "assignedOfficer": "Inspector Emily Chen",
+      "officerNotes": "Reviewing neighborhood street security cameras.",
+      "auditLogs": [
+        {
+          "id": "aud_7",
+          "timestamp": "2026-10-25T06:16:00.070Z",
+          "officerName": "Inspector Emily Chen",
+          "action": "Assigned Case"
+        }
+      ],
+      "createdAt": "2026-10-25T06:16:00.070Z",
+      "updatedAt": "2026-10-25T06:16:00.070Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_1",
+      "complaintId": "CR-2026-0812",
+      "senderId": "usr_vic_1",
+      "senderName": "Jane Doe",
+      "senderRole": "victim",
+      "text": "Hello Officer, thank you for taking this report. I have the medical report from the urgent care clinic if you need it.",
+      "timestamp": "2026-10-24T07:16:00.070Z",
+      "status": "read"
+    },
+    {
+      "id": "msg_2",
+      "complaintId": "CR-2026-0812",
+      "senderId": "usr_auth_1",
+      "senderName": "Officer Sarah Jenkins",
+      "senderRole": "authority",
+      "text": "Hello Jane, yes please keep the documentation handy. We have requested the high-resolution transit camera tape. Are you in a safe location right now?",
+      "timestamp": "2026-10-24T07:46:00.070Z",
+      "status": "read"
+    },
+    {
+      "id": "msg_3",
+      "complaintId": "CR-2026-0812",
+      "senderId": "usr_vic_1",
+      "senderName": "Jane Doe",
+      "senderRole": "victim",
+      "text": "Yes, I am currently home with family. Please let me know as soon as the video footage is reviewed.",
+      "timestamp": "2026-10-24T08:16:00.070Z",
+      "status": "delivered"
+    },
+    {
+      "id": "msg_1792997108668_qfym",
+      "complaintId": "CR-2026-4125",
+      "senderId": "usr_1792996680585_h1rn",
+      "senderName": "anu",
+      "senderRole": "victim",
+      "text": "hi sir",
+      "timestamp": "2026-10-26T06:45:08.668Z",
+      "status": "delivered"
+    },
+    {
+      "id": "msg_1792998994435_8yuw",
+      "complaintId": "CR-2026-4125",
+      "senderId": "usr_auth_1",
+      "senderName": "Officer Sarah Jenkins",
+      "senderRole": "authority",
+      "text": "yes",
+      "timestamp": "2026-10-26T07:16:34.435Z",
+      "status": "delivered"
+    },
+    {
+      "id": "msg_1793179996034_77dv",
+      "complaintId": "CR-2026-4125",
+      "senderId": "usr_1792996680585_h1rn",
+      "senderName": "anu",
+      "senderRole": "victim",
+      "text": "i feel very fear",
+      "timestamp": "2026-10-28T09:33:16.034Z",
+      "status": "delivered"
+    }
+  ]
+}

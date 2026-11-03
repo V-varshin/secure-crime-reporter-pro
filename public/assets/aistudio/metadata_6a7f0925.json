@@ -1,0 +1,6 @@
+{
+  "name": "Smart Crime Reporting System",
+  "description": "Smart Crime Reporting & Management System with Leaflet OpenStreetMap location reporting, AI sentiment and severity analysis, and authority dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
